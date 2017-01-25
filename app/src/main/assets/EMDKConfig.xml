@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><!--This is an auto generated document. Changes to this document may cause incorrect behavior.--><wap-provisioningdoc>
+  <characteristic type="ProfileInfo">
+    <parm name="created_wizard_version" value="6.0.4"/>
+  </characteristic>
+  <characteristic type="Profile">
+    <parm name="ProfileName" value="Notification"/>
+    <parm name="ModifiedDate" value="2017-01-25 09:54:57"/>
+    <parm name="TargetSystemVersion" value="6.0"/>
+    <characteristic type="UiMgr" version="5.2">
+      <parm name="emdk_name" value="UiManager"/>
+      <parm name="ClipBoardUsage" value="1"/>
+    </characteristic>
+  </characteristic>
+  <characteristic type="Profile">
+    <parm name="ProfileName" value="AccessManager"/>
+    <parm name="ModifiedDate" value="2017-01-24 16:54:17"/>
+    <parm name="TargetSystemVersion" value="6.0"/>
+    <characteristic type="AccessMgr" version="4.3">
+      <parm name="emdk_name" value="RestrictSettings"/>
+      <parm name="OperationMode" value="2"/>
+      <parm name="SystemSettings" value="1"/>
+      <parm name="AddPackagesAction" value="1"/>
+      <parm name="AddPackageNames" value="com.darryncampbell.presentations.mxlockdown"/>
+      <parm name="AddPackagesActionAllowXML" value="1"/>
+      <parm name="AddPackageNamesAllowXML" value="com.darryncampbell.presentations.mxlockdown"/>
+      <parm name="AllowSubmitXMLAction" value="2"/>
+    </characteristic>
+  </characteristic>
+  <characteristic type="Profile">
+    <parm name="ProfileName" value="ApplicationManager"/>
+    <parm name="ModifiedDate" value="2017-01-25 08:15:34"/>
+    <parm name="TargetSystemVersion" value="6.0"/>
+    <characteristic type="AppMgr" version="5.1">
+      <parm name="emdk_name" value="AppManager"/>
+      <parm name="AccessAppInfoAction" value="EnableAccessAllInfo"/>
+    </characteristic>
+  </characteristic>
+  <characteristic type="Profile">
+    <parm name="ProfileName" value="SettingsManager"/>
+    <parm name="ModifiedDate" value="2017-01-25 08:21:15"/>
+    <parm name="TargetSystemVersion" value="6.0"/>
+    <characteristic type="SettingsMgr" version="4.4">
+      <parm name="emdk_name" value="RestrictSettings"/>
+      <parm name="AccessAppsSection" value="1"/>
+    </characteristic>
+  </characteristic>
+</wap-provisioningdoc><!--
+<characteristic type="ProfileInfo">
+  <parm name="created_wizard_version" value="6.0.4"/>
+</characteristic>
+<characteristic type="Profile">
+  <parm name="ProfileName" value="Notification"/>
+  <parm name="ModifiedDate" value="2017-01-24 16:07:10"/>
+  <parm name="TargetSystemVersion" value="6.0"/>
+  <characteristic type="UiMgr" version="5.2">
+    <parm name="emdk_name" value="UiManager"/>
+    <parm name="NotificationPullDown" value="2"/>
+  </characteristic>
+</characteristic>
+</wap-provisioningdoc>
+--><!--
+  <characteristic type="Profile">
+    <parm name="ProfileName" value="AccessManager"/>
+    <parm name="ModifiedDate" value="2017-01-24 16:48:23"/>
+    <parm name="TargetSystemVersion" value="6.0"/>
+    <characteristic type="AccessMgr" version="4.3">
+      <parm name="emdk_name" value="RestrictSettings"/>
+      <parm name="OperationMode" value="2"/>
+      <parm name="SystemSettings" value="1"/>
+      <parm name="AddPackagesAction" value="1"/>
+      <parm name="AddPackageNames" value="com.darryncampbell.presentations.mxlockdown"/>
+      <parm name="AddPackagesActionAllowXML" value="1"/>
+      <parm name="AddPackageNamesAllowXML" value="com.darryncampbell.presentations.mxlockdown"/>
+      <parm name="AllowSubmitXMLAction" value="2"/>
+    </characteristic>
+  </characteristic>
+  -->
