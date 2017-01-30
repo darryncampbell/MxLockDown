@@ -13,17 +13,11 @@
   </characteristic>
   <characteristic type="Profile">
     <parm name="ProfileName" value="AccessManager"/>
-    <parm name="ModifiedDate" value="2017-01-24 16:54:17"/>
+    <parm name="ModifiedDate" value="2017-01-30 09:29:14"/>
     <parm name="TargetSystemVersion" value="6.0"/>
     <characteristic type="AccessMgr" version="4.3">
       <parm name="emdk_name" value="RestrictSettings"/>
-      <parm name="OperationMode" value="2"/>
-      <parm name="SystemSettings" value="1"/>
-      <parm name="AddPackagesAction" value="1"/>
-      <parm name="AddPackageNames" value="com.darryncampbell.presentations.mxlockdown"/>
-      <parm name="AddPackagesActionAllowXML" value="1"/>
-      <parm name="AddPackageNamesAllowXML" value="com.darryncampbell.presentations.mxlockdown"/>
-      <parm name="AllowSubmitXMLAction" value="2"/>
+      <parm name="OperationMode" value="1"/>
     </characteristic>
   </characteristic>
   <characteristic type="Profile">

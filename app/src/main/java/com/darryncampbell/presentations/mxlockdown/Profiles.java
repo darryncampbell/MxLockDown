@@ -129,6 +129,16 @@ public class Profiles {
             "    </characteristic>\n" +
             "  </characteristic>";
 
+    static String AccessManagerSettingsNoWhitelist = "  <characteristic type=\"Profile\">\n" +
+            "    <parm name=\"ProfileName\" value=\"AccessManager\"/>\n" +
+            "    <parm name=\"ModifiedDate\" value=\"2017-01-30 09:29:14\"/>\n" +
+            "    <parm name=\"TargetSystemVersion\" value=\"6.0\"/>\n" +
+            "    <characteristic type=\"AccessMgr\" version=\"4.3\">\n" +
+            "      <parm name=\"emdk_name\" value=\"RestrictSettings\"/>\n" +
+            "      <parm name=\"OperationMode\" value=\"1\"/>\n" +
+            "    </characteristic>\n" +
+            "  </characteristic>";
+
     static String ApplicationManagerQuickSearchBoxEnable = "  <characteristic type=\"Profile\">\n" +
             "    <parm name=\"ProfileName\" value=\"ApplicationManager\"/>\n" +
             "    <parm name=\"ModifiedDate\" value=\"2017-01-25 08:07:34\"/>\n" +

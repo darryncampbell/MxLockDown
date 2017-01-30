@@ -97,6 +97,12 @@ public class MainActivity extends AppCompatActivity implements EMDKListener, Ada
                     "Select the level of system settings access to be allowed on the device's System Settings menu\n\nThis value will cause the device user to be allowed to access only a reduced set of the capabilities of the in-device System Settings Menu (Display, Volume, About)"
             },
             {
+                    "AccessManagerSettings No Whitelist",
+                    "AccessManager",
+                    Profiles.AccessManagerSettingsNoWhitelist,
+                    "Select the desired Operation Mode which will turn Whitelisting on or off. Whitelisting is turned off by default, and hence no restrictions are imposed on which applications device users can install or which applications can be launched.\n\nThis value will cause Whitelisting to be turned off and hence disable all Whitelisting functionality."
+            },
+            {
                     "AppManager QuickSearchBox Enable",
                     "ApplicationManager",
                     Profiles.ApplicationManagerQuickSearchBoxEnable,
