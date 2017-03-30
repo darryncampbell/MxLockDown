@@ -161,6 +161,28 @@ public class Profiles {
             "    </characteristic>\n" +
             "  </characteristic>";
 
+    static String ApplicationManagerSettingsAppEnable = "  <characteristic type=\"Profile\">\n" +
+            "    <parm name=\"ProfileName\" value=\"ApplicationManager\"/>\n" +
+            "    <parm name=\"ModifiedDate\" value=\"2017-01-25 08:07:34\"/>\n" +
+            "    <parm name=\"TargetSystemVersion\" value=\"6.0\"/>\n" +
+            "    <characteristic type=\"AppMgr\" version=\"5.1\">\n" +
+            "      <parm name=\"emdk_name\" value=\"AppManager\"/>\n" +
+            "      <parm name=\"Action\" value=\"EnableApplication\"/>\n" +
+            "      <parm name=\"Package\" value=\"com.android.settings\"/>\n" +
+            "    </characteristic>\n" +
+            "  </characteristic>";
+
+    static String ApplicationManagerSettingsAppDisable = "  <characteristic type=\"Profile\">\n" +
+            "    <parm name=\"ProfileName\" value=\"ApplicationManager\"/>\n" +
+            "    <parm name=\"ModifiedDate\" value=\"2017-01-25 08:07:34\"/>\n" +
+            "    <parm name=\"TargetSystemVersion\" value=\"6.0\"/>\n" +
+            "    <characteristic type=\"AppMgr\" version=\"5.1\">\n" +
+            "      <parm name=\"emdk_name\" value=\"AppManager\"/>\n" +
+            "      <parm name=\"Action\" value=\"DisableApplication\"/>\n" +
+            "      <parm name=\"Package\" value=\"com.android.settings\"/>\n" +
+            "    </characteristic>\n" +
+            "  </characteristic>";
+
     static String AccessToAppInfoEnable = "  <characteristic type=\"Profile\">\n" +
             "    <parm name=\"ProfileName\" value=\"ApplicationManager\"/>\n" +
             "    <parm name=\"ModifiedDate\" value=\"2017-01-25 08:14:24\"/>\n" +

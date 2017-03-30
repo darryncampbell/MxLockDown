@@ -115,6 +115,18 @@ public class MainActivity extends AppCompatActivity implements EMDKListener, Ada
                     "Specify the application action to perform.\n\nDisable Application\n\nDisables the System application with the specified Package Name, thereby preventing it from being launched. If no System application with the specified Package Name is built-into the device, an error will be returned in the Result XML document."
             },
             {
+                    "AppManager Settings App Enable",
+                    "ApplicationManager",
+                    Profiles.ApplicationManagerSettingsAppEnable,
+                    "Specify the application action to perform.\n\nEnable Application\n\nEnables the System application with the specified Package Name, thereby allowing it to be launched. If no System application with the specified Package Name is built into the device, an error will be returned in the Result XML document"
+            },
+            {
+                    "AppManager Settings App Disable",
+                    "ApplicationManager",
+                    Profiles.ApplicationManagerSettingsAppDisable,
+                    "Specify the application action to perform.\n\nDisable Application\n\nDisables the System application with the specified Package Name, thereby preventing it from being launched. If no System application with the specified Package Name is built-into the device, an error will be returned in the Result XML document."
+            },
+            {
                     "AccessToAppInfo Enable",
                     "ApplicationManager",
                     Profiles.AccessToAppInfoEnable,
