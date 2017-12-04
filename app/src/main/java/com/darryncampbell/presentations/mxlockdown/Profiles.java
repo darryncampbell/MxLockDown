@@ -243,4 +243,47 @@ public class Profiles {
             "      <parm name=\"ClipBoardClear\" value=\"true\"/>\n" +
             "    </characteristic>\n" +
             "  </characteristic>";
+/*
+    //  For some reason disabling the Navigation Bar is not working on my test device so I am not including them here (yet)
+    static String NavigationBarDisable = "<characteristic type=\"Profile\">\n" +
+            "    <parm name=\"ProfileName\" value=\"Navigation\"/>\n" +
+            "    <parm name=\"ModifiedDate\" value=\"2017-12-04 08:30:45\"/>\n" +
+            "    <parm name=\"TargetSystemVersion\" value=\"7.1\"/>\n" +
+            "    <characteristic type=\"UiMgr\" version=\"7.1\">\n" +
+            "      <parm name=\"emdk_name\" value=\"UIManager_7_1\"/>\n" +
+            "      <parm name=\"NavigationBarUsage\" value=\"2\"/>\n" +
+            "    </characteristic>\n" +
+            "  </characteristic>";
+
+    static String NavigationBarEnable = "<characteristic type=\"Profile\">\n" +
+            "    <parm name=\"ProfileName\" value=\"Navigation\"/>\n" +
+            "    <parm name=\"ModifiedDate\" value=\"2017-12-04 08:30:45\"/>\n" +
+            "    <parm name=\"TargetSystemVersion\" value=\"7.1\"/>\n" +
+            "    <characteristic type=\"UiMgr\" version=\"7.1\">\n" +
+            "      <parm name=\"emdk_name\" value=\"UIManager_7_1\"/>\n" +
+            "      <parm name=\"NavigationBarUsage\" value=\"1\"/>\n" +
+            "    </characteristic>\n" +
+            "  </characteristic>";
+ */
+
+    static String RecentAppsDisable = "<characteristic type=\"Profile\">\n" +
+            "    <parm name=\"ProfileName\" value=\"Navigation\"/>\n" +
+            "    <parm name=\"ModifiedDate\" value=\"2017-12-04 08:30:45\"/>\n" +
+            "    <parm name=\"TargetSystemVersion\" value=\"7.1\"/>\n" +
+            "    <characteristic type=\"UiMgr\" version=\"7.1\">\n" +
+            "      <parm name=\"emdk_name\" value=\"UIManager_7_1\"/>\n" +
+            "      <parm name=\"RecentAppButtonUsage\" value=\"2\"/>\n" +
+            "    </characteristic>\n" +
+            "  </characteristic>";
+
+    static String RecentAppsEnable = "<characteristic type=\"Profile\">\n" +
+            "    <parm name=\"ProfileName\" value=\"Navigation\"/>\n" +
+            "    <parm name=\"ModifiedDate\" value=\"2017-12-04 08:30:45\"/>\n" +
+            "    <parm name=\"TargetSystemVersion\" value=\"7.1\"/>\n" +
+            "    <characteristic type=\"UiMgr\" version=\"7.1\">\n" +
+            "      <parm name=\"emdk_name\" value=\"UIManager_7_1\"/>\n" +
+            "      <parm name=\"RecentAppButtonUsage\" value=\"1\"/>\n" +
+            "    </characteristic>\n" +
+            "  </characteristic>";
+
 }

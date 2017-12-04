@@ -9,6 +9,7 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v4.app.NotificationCompat;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -149,8 +150,33 @@ public class MainActivity extends AppCompatActivity implements EMDKListener, Ada
                     "SettingsManager",
                     Profiles.AccessAppsSettingsDisable,
                     "Ability to Access Apps Section in Settings UI\n\nThis value will cause the device user to be prevented from accessing the \"Apps\" section of the System Settings Menu."
+            },
+            //  For some reason disabling the Navigation Bar is not working on my test device so I am not including them here (yet)
+            //{
+            //        "NavigationBarUsage Enable (MX 7.1)",
+            //        "Navigation",
+            //        Profiles.NavigationBarEnable,
+            //        "This is the On/Off switch for the on-screen Navigation Bar, which contains the BACK, HOME and RECENT soft keys. Disabling the Navigation Bar prevents the user from quitting the currently running app by means of those keys. This parameter applies only to the soft keys; it does not control capacitive or hardware keys, which can be disabled separately using the Keymapping Manager\n\nEnables the navigation soft keys (BACK, HOME and RECENT) on the screen-bound Navigation Bar to be displayed and usable."
+            //},
+            //{
+            //        "NavigationBarUsage Disable (MX 7.1)",
+            //        "Navigation",
+            //        Profiles.NavigationBarDisable,
+            //        "This is the On/Off switch for the on-screen Navigation Bar, which contains the BACK, HOME and RECENT soft keys. Disabling the Navigation Bar prevents the user from quitting the currently running app by means of those keys. This parameter applies only to the soft keys; it does not control capacitive or hardware keys, which can be disabled separately using the Keymapping Manager\n\nDisables the navigation soft keys (BACK, HOME and RECENT) on the screen-bound Navigation Bar."
+            //},
+            {
+                    "RecentAppButtonUsage Enable (MX 7.1)",
+                    "Navigation",
+                    Profiles.RecentAppsEnable,
+                    "Controls access to the Android Recent Apps button, which displays a list of applications recently accessed on the device and from which the user can re-launch. Note: Disabling the recent apps button prevents the user from configuring the device for multi-window operation.\n\nEnables the Recent Apps button, which displays a list of recently used apps that can be viewed and launched."
+            },
+            {
+                    "RecentAppButtonUsage Disable (MX 7.1)",
+                    "Navigation",
+                    Profiles.RecentAppsDisable,
+                    "Controls access to the Android Recent Apps button, which displays a list of applications recently accessed on the device and from which the user can re-launch. Note: Disabling the recent apps button prevents the user from configuring the device for multi-window operation.\n\nDisables the Recent Apps button, preventing the display and launch of recently used apps."
             }
-        };
+    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -173,7 +199,7 @@ public class MainActivity extends AppCompatActivity implements EMDKListener, Ada
                 {
                     public void onClick(View v)
                     {
-                        applyProfile();
+                       applyProfile();
                     }
                 }
         );
@@ -200,8 +226,17 @@ public class MainActivity extends AppCompatActivity implements EMDKListener, Ada
 
                 if (results.statusCode == EMDKResults.STATUS_CODE.CHECK_XML)
                 {
-                    //  it worked
-                    Toast.makeText(getApplicationContext(), "" + profiles[selectedProfile][PROFILE_NAME_TEXT] + " successfully applied", Toast.LENGTH_SHORT).show();
+                    String responseXML = results.getStatusString();
+                    Log.d("MXLockDown", responseXML);
+                    if (responseXML.toLowerCase().contains("error"))
+                    {
+                        showDialog("Error", "Failed to apply profile");
+                    }
+                    else
+                    {
+                        //  it worked
+                        Toast.makeText(getApplicationContext(), "" + profiles[selectedProfile][PROFILE_NAME_TEXT] + " successfully applied", Toast.LENGTH_SHORT).show();
+                    }
                 }
                 else
                 {

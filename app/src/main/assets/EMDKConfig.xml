@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><!--This is an auto generated document. Changes to this document may cause incorrect behavior.--><wap-provisioningdoc>
   <characteristic type="ProfileInfo">
-    <parm name="created_wizard_version" value="6.0.4"/>
+    <parm name="created_wizard_version" value="6.6.0"/>
   </characteristic>
   <characteristic type="Profile">
     <parm name="ProfileName" value="Notification"/>
@@ -38,21 +38,16 @@
       <parm name="AccessAppsSection" value="1"/>
     </characteristic>
   </characteristic>
-</wap-provisioningdoc><!--
-<characteristic type="ProfileInfo">
-  <parm name="created_wizard_version" value="6.0.4"/>
-</characteristic>
-<characteristic type="Profile">
-  <parm name="ProfileName" value="Notification"/>
-  <parm name="ModifiedDate" value="2017-01-24 16:07:10"/>
-  <parm name="TargetSystemVersion" value="6.0"/>
-  <characteristic type="UiMgr" version="5.2">
-    <parm name="emdk_name" value="UiManager"/>
-    <parm name="NotificationPullDown" value="2"/>
+  <characteristic type="Profile">
+    <parm name="ProfileName" value="Navigation"/>
+    <parm name="ModifiedDate" value="2017-12-04 09:21:48"/>
+    <parm name="TargetSystemVersion" value="7.1"/>
+    <characteristic type="UiMgr" version="7.1">
+      <parm name="emdk_name" value="UIManager_7_1"/>
+    </characteristic>
   </characteristic>
-</characteristic>
 </wap-provisioningdoc>
---><!--
+<!--
   <characteristic type="Profile">
     <parm name="ProfileName" value="AccessManager"/>
     <parm name="ModifiedDate" value="2017-01-24 16:48:23"/>
