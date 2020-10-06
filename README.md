@@ -1,3 +1,6 @@
+*Please be aware that this application / sample is provided as-is for demonstration purposes without any guarantee of support*
+=========================================================
+
 # MxLockDown
 Demonstrating the various techniques exposed by Zebra MX to lock down your Android device
 
